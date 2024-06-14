@@ -9,7 +9,7 @@ dpkg -i mysql-apt-config_0.8.30-1_all.deb
 echo "install mariadb"
 #install mariadb
 apt update
-apt -y install mysql-server=8.0.37*
+apt install mysql-server=8.0.37*
 
 systemctl enable mysql
 echo "service Mysql is enabled"
