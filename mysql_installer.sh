@@ -13,3 +13,13 @@ apt install mysql-server=8.0.37*
 
 systemctl enable mysql
 echo "service Mysql is enabled"
+# Set password root
+echo "You can reset password for root with you self"
+echo "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';"
+
+echo "And you can create user with command."
+echo "CREATE USER 'sammy'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';"
+
+echo "And you can grant these privileges to user."
+echo "GRANT CREATE, ALTER, DROP, INSERT, UPDATE, INDEX, DELETE, SELECT, REFERENCES, RELOAD on *.* TO 'sammy'@'localhost' WITH GRANT OPTION;"
+
